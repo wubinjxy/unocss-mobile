@@ -1,0 +1,49 @@
+{
+  "name": "hot-mobile",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "lint": "vue-cli-service lint",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.47.2",
+    "element-plus": "^2.2.25",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^6.0.0",
+    "unocss": "^0.47.1",
+    "vant": "^4.0.0",
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@unocss/preset-rem-to-px": "^0.47.3",
+    "@unocss/preset-wind": "^0.47.2",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "sass": "^1.56.1",
+    "unplugin-vue-components": "^0.22.11",
+    "vite": "^3.2.3"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "type": "module",
+  "postcss": {
+    "plugins": {
+      "postcss-pxtorem": {
+        "rootValue": 37.5,
+        "propList": [
+          "*"
+        ]
+      }
+    }
+  }
+}
